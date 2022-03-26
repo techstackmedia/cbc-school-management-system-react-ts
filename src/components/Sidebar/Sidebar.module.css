@@ -1,0 +1,81 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css");
+.headerSidebar {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  background-color: #fff;
+  height: 100%;
+  width: auto;
+}
+
+.navSidebar {
+  display: inline-flex;
+}
+
+.navSidebar li {
+  list-style-type: none;
+}
+
+.navSidebar li {
+  font-weight: bold;
+}
+
+.item0 a {
+  background-color: #5f77f6;
+}
+
+.navSidebar a {
+  color: #a2a3b7;
+  text-decoration: none;
+  padding: 9px 25px;
+  display: flex;
+  font-size: 13px;
+}
+
+.navSidebar a:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.item0 a:hover {
+  background-color: #5f77f6;
+}
+
+.item0 a {
+  color: #fff;
+}
+
+.item5,
+.item9 {
+  margin-top: 20px;
+}
+
+.item5 a,
+.item9 a {
+  color: #4c4e6f;
+  text-transform: uppercase;
+  font-size: 11.7px;
+  cursor: text;
+}
+
+.item5 a:hover,
+.item9 a:hover {
+  background-color: transparent;
+  color: #4c4e6f;
+}
+
+/* .item5 a:before,
+.item9 a:before {
+  font-family: "FontAwesome 5 Free";
+  font-weight: 900;
+  content: "\f35d";
+  padding-right: 5px;
+} */
+
+.logoArrow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 15px;
+}

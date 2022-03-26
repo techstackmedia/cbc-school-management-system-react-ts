@@ -1,0 +1,40 @@
+.footerFooter {
+  background-color: #fff;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.navFooter {
+  margin: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 184.739px;
+  padding-left: 10px
+}
+
+.navFooter ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 4.063rem;
+}
+
+.navFooter li {
+  list-style-type: none;
+  align-items: center;
+  padding: 0 0.25rem;
+}
+
+.navFooter li,
+.navFooter a {
+  text-decoration: none;
+  color: #6c7293;
+  padding: 0px 0.25rem;
+  font-size: 13px;
+}
+
+.navFooter a:hover {
+  color: #5d78ff;
+  text-decoration: underline;
+}
