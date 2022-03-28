@@ -33,7 +33,7 @@ const Sidebar = () => {
   });
 
   return (
-    <header className={sidebarStyle.headerSidebar}>
+    <aside className={sidebarStyle.asideSidebar}>
       <div className={sidebarStyle.logoArrow}>
         <div>
           <img src={logo} width={60} height={60} alt="company logo" />
@@ -45,7 +45,7 @@ const Sidebar = () => {
       <nav className={sidebarStyle.navSidebar}>
         <ul>{sidebarItemsElem}</ul>
       </nav>
-    </header>
+    </aside>
   );
 };
 

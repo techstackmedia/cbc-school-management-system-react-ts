@@ -1,5 +1,5 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css");
-.headerSidebar {
+.asideSidebar {
   position: fixed;
   left: 0;
   bottom: 0;
@@ -7,10 +7,12 @@
   background-color: #fff;
   height: 100%;
   width: auto;
+  margin: 5px 0;
 }
 
 .navSidebar {
   display: inline-flex;
+  align-items: center;
 }
 
 .navSidebar li {
@@ -19,6 +21,7 @@
 
 .navSidebar li {
   font-weight: bold;
+  
 }
 
 .item0 a {
@@ -65,13 +68,60 @@
   color: #4c4e6f;
 }
 
-/* .item5 a:before,
-.item9 a:before {
-  font-family: "FontAwesome 5 Free";
+/* f015 */
+
+.item1 a::before {
+  font-family: "Font Awesome 5 Free";
   font-weight: 900;
-  content: "\f35d";
+  content: "\f015";
   padding-right: 5px;
-} */
+  position: relative;
+  top: 2px;
+  font-style: 13px;
+}
+
+.item6 a::before,
+.item7 a::before,
+.item8 a::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f51c";
+  padding-right: 5px;
+  position: relative;
+  top: 4px;
+  font-size: 13px;
+}
+
+.item2 a::before,
+.item3 a::before,
+.item4 a::before,
+.item10 a::before,
+.item11 a::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f360";
+  padding-right: 5px;
+  position: relative;
+  top: 4px;
+  font-size: 13px;
+}
+
+/* 141 */
+/* 201 */
+/* 204 */
+/* 205 */
+
+/* https://fontawesome.com/v6/icons/ */
+.item6 a::after,
+.item7 a::after,
+.item8 a::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f105";
+  position: absolute;
+  right: 15px;
+  font-size: 13px;
+}
 
 .logoArrow {
   display: flex;
