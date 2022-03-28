@@ -1,5 +1,6 @@
 .footerFooter {
   background-color: #fff;
+  box-shadow: 0 1px 2px #ccc;
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -9,8 +10,8 @@
   margin: 0 20px;
   display: flex;
   justify-content: space-between;
-  margin-left: 184.739px;
-  padding-left: 10px
+  margin-left: 265px;
+  padding-left: 1.1rem;
 }
 
 .navFooter ul {

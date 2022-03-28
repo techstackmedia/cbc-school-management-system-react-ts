@@ -28,23 +28,23 @@ const Sidebar = () => {
         </div>
         <ul className={sidebarStyle.navSidebarCore}>
           <li>
-            <Link to="/user-management"><HomeIcon style={{fontSize: '1.3rem', display: 'flex', marginRight: '5px'}} /> User Management</Link>
+            <Link to="/user-management"><HomeIcon style={{fontSize: '1.3rem', display: 'flex', marginRight: '15px'}} /> User Management</Link>
           </li>
           <li>
-            <Link to="/schools"><AspectRatioIcon style={{fontSize: '1.3rem', display: 'flex', marginRight: '5px'}} />Schools</Link>
+            <Link to="/schools"><AspectRatioIcon style={{fontSize: '1.3rem', display: 'flex', marginRight: '15px'}} />Schools</Link>
           </li>
           <li>
-            <Link to="/teachers"><AspectRatioIcon style={{fontSize: '1.3rem', display: 'flex', marginRight: '5px'}} />Teachers</Link>
+            <Link to="/teachers"><AspectRatioIcon style={{fontSize: '1.3rem', display: 'flex', marginRight: '15px'}} />Teachers</Link>
           </li>
           <li>
-            <Link to="/students"><AspectRatioIcon style={{fontSize: '1.3rem', display: 'flex', marginRight: '5px'}} />Students</Link>
+            <Link to="/students"><AspectRatioIcon style={{fontSize: '1.3rem', display: 'flex', marginRight: '15px'}} />Students</Link>
           </li>
         </ul>
 
         <div className={sidebarStyle.navSidebarMain}>REPORTS</div>
         <ul className={sidebarStyle.navSidebarSchool}>
           <li>
-            <span><AssessmentIcon style={{fontSize: '1.3rem', display: 'flex', marginRight: '5px'}} />School <ArrowForwardIosIcon
+            <span><AssessmentIcon style={{fontSize: '1.3rem', display: 'flex', marginRight: '15px'}} />School <ArrowForwardIosIcon
               style={{
                 position: 'absolute',
                 right: 15,
@@ -69,7 +69,7 @@ const Sidebar = () => {
         </ul>
         <ul className={sidebarStyle.navSidebarTeacher}>
           <li>
-            <span><AssessmentIcon style={{fontSize: '1.3rem', display: 'flex', marginRight: '5px'}} />Teacher  <ArrowForwardIosIcon
+            <span><AssessmentIcon style={{fontSize: '1.3rem', display: 'flex', marginRight: '15px'}} />Teacher  <ArrowForwardIosIcon
               style={{
                 position: 'absolute',
                 right: 15,
@@ -107,7 +107,7 @@ const Sidebar = () => {
             </ul>
           </li>
           <li>
-            <span><AssessmentIcon style={{fontSize: '1.3rem', display: 'flex', marginRight: '5px'}} />Student <ArrowForwardIosIcon
+            <span><AssessmentIcon style={{fontSize: '1.3rem', display: 'flex', marginRight: '15px'}} />Student <ArrowForwardIosIcon
               style={{
                 position: 'absolute',
                 right: 15,
@@ -126,10 +126,10 @@ const Sidebar = () => {
         <div className={sidebarStyle.navSidebarMain}>ATTENDANCE</div>
         <ul className={sidebarStyle.navSidebarAttendance}>
           <li>
-            <Link to="student-attendance"><AspectRatioIcon style={{fontSize: '1.3rem', display: 'flex', marginRight: '5px'}} />Student Attendance</Link>
+            <Link to="student-attendance"><AspectRatioIcon style={{fontSize: '1.3rem', display: 'flex', marginRight: '15px'}} />Student Attendance</Link>
           </li>
           <li>
-            <Link to="teacher-attendance"><AspectRatioIcon style={{fontSize: '1.3rem', display: 'flex', marginRight: '5px'}} />Teacher Attendance</Link>
+            <Link to="teacher-attendance"><AspectRatioIcon style={{fontSize: '1.3rem', display: 'flex', marginRight: '15px'}} />Teacher Attendance</Link>
           </li>
         </ul>
       </nav>

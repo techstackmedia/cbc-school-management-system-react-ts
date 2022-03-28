@@ -1,11 +1,14 @@
 .headerNavbar {
   background-color: #fff;
+  box-shadow: 0 1px 2px #ccc;
+  position: absolute;
   width: 100%;
+
 }
 
 .navNavbar {
   margin: 0 20px;
-  margin-left: 184.739px;
+  margin-left: 265px;
 }
 
 .navNavbar ul {

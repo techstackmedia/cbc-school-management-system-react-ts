@@ -4,17 +4,17 @@ import userImg from "../../images/person-profile.jpeg";
 
 const Navabar = () => {
   const navbarItems = [
-    "dashboard",
-    "schools",
-    "teachers",
-    "students",
-    "reports",
+    "Dashboard",
+    "Schools",
+    "Teachers",
+    "Students",
+    "Reports",
   ];
 
   const navbarItemsElem = navbarItems.map((item) => {
     return (
-      <li>
-        <Link to={item}>{`${item[0].toUpperCase()}${item.slice(1)}`}</Link>
+      <li key={item}>
+        <Link to={item.toLowerCase()}>{item}</Link>
       </li>
     );
   });

@@ -1,13 +1,15 @@
 import React from 'react';
 import Sidebar from "../../components/Sidebar/Sidebar";
-import NavbarFooter from "../../components/NavbarFooter/NavbarFooter";
+import Navbar from "../../components/Navbar/Navbar";
+import Footer from '../../components/Footer/Footer';
 
 const Layout = () => {
   return (
-    <div>
-      <Sidebar />
-      {/* <NavbarFooter /> */}
-    </div>
+      <>
+        <Navbar />
+        <Sidebar />
+        <Footer/>
+      </>
   );
 };
 
