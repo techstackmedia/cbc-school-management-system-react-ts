@@ -28,7 +28,7 @@ const Footer = () => {
       </nav>
       <Outlet />
     </footer>
-  );
+  )
 };
 
 export default Footer;

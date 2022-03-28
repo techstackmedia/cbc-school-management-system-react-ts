@@ -1,28 +1,13 @@
-import { Link, Outlet } from "react-router-dom";
-import sidebarStyle from "./Sidebar.module.css";
-import logo from "../../images/logo.jpeg";
-import arrowSide from "../../images/arrowside.svg";
+import { Link, Outlet } from 'react-router-dom';
+import sidebarStyle from './Sidebar.module.css';
+import logo from '../../images/logo.jpeg';
+import arrowSide from '../../images/arrowside.svg';
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+import HomeIcon from '@mui/icons-material/Home';
+import AspectRatioIcon from '@mui/icons-material/AspectRatio';
+import AssessmentIcon from '@mui/icons-material/Assessment';
 
 const Sidebar = () => {
-  const sidebarNavItems = [
-    "Dashboard",
-    "User Management",
-    "Schools",
-    "Teachers",
-    "Students",
-  ];
-
-  const sidebarNavItemsElem = sidebarNavItems.map((item, index) => {
-    return (
-      <>
-        <li className={sidebarStyle[`item${index}`]} key={index}>
-          <Link to={item.toLowerCase().replace(" ", "-")}>{item}</Link>
-        </li>
-        <Outlet />
-      </>
-    );
-  });
-
   return (
     <aside className={sidebarStyle.asideSidebar}>
       <div className={sidebarStyle.logoArrow}>
@@ -34,12 +19,41 @@ const Sidebar = () => {
         </div>
       </div>
       <nav className={sidebarStyle.navSidebar}>
-        <ul>{sidebarNavItemsElem}</ul>
-        <div>REPORTS</div>
-        <ul>
+        <div className={sidebarStyle.navSidebarDashboard}>
+          <ul>
+            <li>
+              <Link to="/dashboard">Dashboard</Link>
+            </li>
+          </ul>
+        </div>
+        <ul className={sidebarStyle.navSidebarCore}>
           <li>
-            School
-            <ul>
+            <Link to="/user-management"><HomeIcon style={{fontSize: '1.3rem', display: 'flex', marginRight: '5px'}} /> User Management</Link>
+          </li>
+          <li>
+            <Link to="/schools"><AspectRatioIcon style={{fontSize: '1.3rem', display: 'flex', marginRight: '5px'}} />Schools</Link>
+          </li>
+          <li>
+            <Link to="/teachers"><AspectRatioIcon style={{fontSize: '1.3rem', display: 'flex', marginRight: '5px'}} />Teachers</Link>
+          </li>
+          <li>
+            <Link to="/students"><AspectRatioIcon style={{fontSize: '1.3rem', display: 'flex', marginRight: '5px'}} />Students</Link>
+          </li>
+        </ul>
+
+        <div className={sidebarStyle.navSidebarMain}>REPORTS</div>
+        <ul className={sidebarStyle.navSidebarSchool}>
+          <li>
+            <span><AssessmentIcon style={{fontSize: '1.3rem', display: 'flex', marginRight: '5px'}} />School <ArrowForwardIosIcon
+              style={{
+                position: 'absolute',
+                right: 15,
+                color: '#5c5e8',
+                fontSize: '0.7rem',
+                flex: '0 0 20px',
+              }}
+            /></span>
+            <ul className={sidebarStyle.navSidebarSchoolDistribution}>
               <li>
                 <Link to="/school/school-distribution-by-state">
                   School Distribution by State
@@ -53,10 +67,18 @@ const Sidebar = () => {
             </ul>
           </li>
         </ul>
-        <ul>
+        <ul className={sidebarStyle.navSidebarTeacher}>
           <li>
-            Teacher
-            <ul>
+            <span><AssessmentIcon style={{fontSize: '1.3rem', display: 'flex', marginRight: '5px'}} />Teacher  <ArrowForwardIosIcon
+              style={{
+                position: 'absolute',
+                right: 15,
+                color: '#5c5e8',
+                fontSize: '0.7rem',
+                flex: '0 0 20px',
+              }}
+            /></span>
+            <ul className={sidebarStyle.navSidebarTeacher1}>
               <li>
                 <Link to="/teacher/teachers-qualification">
                   Teachers Qualification
@@ -73,30 +95,45 @@ const Sidebar = () => {
                 </Link>
               </li>
               <li>
-                <Link to="effective-report">
-                  Effective Report
-                  <ul>
-                    <li>
-                      <Link to="/teacher/effective-report/state-report">
-                        State Report
-                      </Link>
-                    </li>
-                  </ul>
-                </Link>
+                <Link to="effective-report">Effective Report</Link>
+                <ul className={sidebarStyle.navSidebarEffectiveReport}>
+                  <li>
+                    <Link to="/teacher/effective-report/state-report">
+                      State Report
+                    </Link>
+                  </li>
+                </ul>
               </li>
             </ul>
           </li>
-        </ul>
-        <div>ATTENDANCE</div>
-        <ul>
           <li>
-            <Link to="student-attendance">Student Attendance</Link>
+            <span><AssessmentIcon style={{fontSize: '1.3rem', display: 'flex', marginRight: '5px'}} />Student <ArrowForwardIosIcon
+              style={{
+                position: 'absolute',
+                right: 15,
+                color: '#5c5e8',
+                fontSize: '0.7rem',
+                flex: '0 0 20px',
+              }}
+            /></span>{' '}
+            
+            <ul className={sidebarStyle.navSidebarStudent}>
+              <li>Distribution by Gender, Class and School</li>
+              <li>Dropout Risk Analysis</li>
+            </ul>
+          </li>
+        </ul>
+        <div className={sidebarStyle.navSidebarMain}>ATTENDANCE</div>
+        <ul className={sidebarStyle.navSidebarAttendance}>
+          <li>
+            <Link to="student-attendance"><AspectRatioIcon style={{fontSize: '1.3rem', display: 'flex', marginRight: '5px'}} />Student Attendance</Link>
           </li>
           <li>
-            <Link to="teacher-attendance">Teacher Attendance</Link>
+            <Link to="teacher-attendance"><AspectRatioIcon style={{fontSize: '1.3rem', display: 'flex', marginRight: '5px'}} />Teacher Attendance</Link>
           </li>
         </ul>
       </nav>
+      <Outlet />
     </aside>
   );
 };

@@ -1,131 +1,80 @@
-@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css");
 .asideSidebar {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  top: 0;
-  background-color: #fff;
+  width: 265px;
   height: 100%;
-  width: auto;
-  margin: 5px 0;
-}
-
-.navSidebar {
-  display: inline-flex;
-  align-items: center;
-}
-
-.navSidebar li {
-  list-style-type: none;
-}
-
-.navSidebar li {
-  font-weight: bold;
-  
-}
-
-.item0 a {
-  background-color: #5f77f6;
-}
-
-.navSidebar a {
-  color: #a2a3b7;
-  text-decoration: none;
-  padding: 9px 25px;
-  display: flex;
-  font-size: 13px;
-}
-
-.navSidebar a:hover {
-  background-color: #000;
-  color: #fff;
-}
-
-.item0 a:hover {
-  background-color: #5f77f6;
-}
-
-.item0 a {
-  color: #fff;
-}
-
-.item5,
-.item9 {
-  margin-top: 20px;
-}
-
-.item5 a,
-.item9 a {
-  color: #4c4e6f;
-  text-transform: uppercase;
-  font-size: 11.7px;
-  cursor: text;
-}
-
-.item5 a:hover,
-.item9 a:hover {
-  background-color: transparent;
-  color: #4c4e6f;
-}
-
-/* f015 */
-
-.item1 a::before {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  content: "\f015";
-  padding-right: 5px;
-  position: relative;
-  top: 2px;
-  font-style: 13px;
-}
-
-.item6 a::before,
-.item7 a::before,
-.item8 a::before {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  content: "\f51c";
-  padding-right: 5px;
-  position: relative;
-  top: 4px;
-  font-size: 13px;
-}
-
-.item2 a::before,
-.item3 a::before,
-.item4 a::before,
-.item10 a::before,
-.item11 a::before {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  content: "\f360";
-  padding-right: 5px;
-  position: relative;
-  top: 4px;
-  font-size: 13px;
-}
-
-/* 141 */
-/* 201 */
-/* 204 */
-/* 205 */
-
-/* https://fontawesome.com/v6/icons/ */
-.item6 a::after,
-.item7 a::after,
-.item8 a::after {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  content: "\f105";
-  position: absolute;
-  right: 15px;
-  font-size: 13px;
+  transition: all 0.3s ease;
+  background-color: #fff;
+  position: fixed;
 }
 
 .logoArrow {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 15px;
+  margin: 5px 25px;
+}
+
+.navSidebar a,
+.navSidebar span {
+  text-decoration: none;
+  color: #a2a3b7;
+  font-weight: 900;
+  display: flex;
+  flex-grow: 1;
+  padding: 0;
+  white-space: nowrap;
+  min-height: 44px;
+  padding: 9px 25px;
+  font-size: 13px;
+  list-style-type: none;
+}
+
+.navSidebar a:hover,
+.navSidebar span:hover {
+  background-color: #000;
+  color: #fff;
+  align-items: center;
+  cursor: pointer;
+}
+
+.navSidebarDashboard a,
+.navSidebarDashboard a:hover {
+  background-color: #5f77f6;
+  color: #fff;
+  align-items: center;
+}
+
+.navSidebarMain {
+  color: #4c4e6f;
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  font-size: 11.7px;
+  padding: 9px 25px;
+  margin-top: 20px;
+  line-height: 1.2;
+}
+
+.navSidebarSchoolDistribution,
+.navSidebarTeacher1 li,
+.navSidebarStudent li {
+  display: none;
+}
+
+.navSidebarSchool span {
+}
+
+.asideSidebar .arrow {
+  position: absolute;
+  right: 15;
+  color: '#5c5e8';
+  font-size: 0.7rem;
+  flex: '0 0 20px';
+}
+
+.asideSidebar i {
+    font-size: 13px;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    line-height: 0;
 }
